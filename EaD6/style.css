@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
+
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.introducao {
+    margin: 10px 280px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 55%;
+}
+
+.links-uteis {
+    list-style: none;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.links-uteis li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 54px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.links-uteis a:link, .links-uteis a:visited {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.links-uteis a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.li{
+    display: inline-block;
+}
+
+.card {
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    font-weight: bold;
+  }
+
+  .conteiner{
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+
+  }
