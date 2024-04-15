@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-image: url('https://cdn.ome.lt/z6SMmvuW5QKZN7ukWrs804-5HuU=/970x360/smart/uploads/conteudo/fotos/call-of-duty-ghost-mw2.png'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); 
+}
+
+.login-form {
+    position: relative;
+    max-width: 700px;
+    padding: 40px;
+    background: rgb(225,88,11);
+    background: radial-gradient(circle, rgba(225,88,11,1) 0%, rgba(250,122,48,1) 36%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 2; 
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #000000; }
+    25% { color: #2c2c2c; }
+    50% { color: #6a6a6a; }
+    75% { color: #acacac; }
+    100% { color: #ffffff; }
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #767272;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-form button:hover {
+border: 2px solid black;
+background-color: #3d3d3d;
+}
+
