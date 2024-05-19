@@ -1,0 +1,109 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+}
+
+#player {
+  background-color: #eee;
+  padding: 20px;
+}
+
+#player audio {
+  width: 100%;
+}
+
+.volume {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.volume label {
+  margin-right: 10px;
+}
+
+#artistas, #albuns, #playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+#musicas .list {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
